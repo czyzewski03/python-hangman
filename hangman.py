@@ -25,7 +25,10 @@ def validate_guess(guess):
         return True
 
 
-words = ['pineapple', 'asian pinecone']
+with open('words.txt', 'r') as word_file:
+    words = word_file.read() \
+            .split(',')
+            
 guess_limit = 5
 guessed_letters = set()
 undiscovered_letters = set()
