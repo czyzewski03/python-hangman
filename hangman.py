@@ -1,6 +1,3 @@
-# Stop repeated guesses from reducing available guesses.
-
-
 #!/usr/bin/env python
 
 import random
